@@ -5,6 +5,7 @@ liness = []
 
 def read_file(filename):
     with open(filename, 'r', encoding='utf-8') as f:
+        #utf-8-sig :sig 是將一個記事本中因存檔時會自動產生一些符號在最前面，而sig 就是將這些刪掉
         for line in f:
             liness.append(line.strip())
         # print(liness)
@@ -25,7 +26,7 @@ def coll(lines):
             person = 'Tom'
             continue
         if person:
-            linee.append(person + ':' + m
+            linee.append(person + ':' + m)
     #print(linee)
     return linee
 
